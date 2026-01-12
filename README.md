@@ -44,9 +44,9 @@ The app uses a demo authentication system for testing without login flows:
 - **X-User-Id Header**: The API accepts an optional `X-User-Id` header to specify
   which user to act as
 - **Default User**: Falls back to User.first when no header provided (demo user:
-  demo@example.com)
+  `demo@example.com`)
 - **Demo User Details**:
-  - Email: demo@example.com
+  - Email: `demo@example.com`
   - Initial points balance: 500 points
   - User ID: 1 (after seeding)
 
@@ -56,6 +56,7 @@ The app uses a demo authentication system for testing without login flows:
 ### Seeding the Database
 
 The seed data includes:
+
 - 1 demo user with 500 points
 - 7 rewards (5 available, 2 unavailable) with costs ranging from 100-2000 points
 
