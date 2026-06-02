@@ -1,4 +1,4 @@
-# Take-Home Assessment Plan: Rewards Redemption App
+# Rewards Redemption App — Implementation Plan
 
 ## Repository
 
@@ -203,12 +203,12 @@ render json: UserResource.new(@user).serialize
 
 ### Authentication Approach
 
-**Demo auth** - simplified for quick testing:
+**Demo auth** - simplified for local development and review:
 
 1. Seed a demo user in the database
 2. API expects `X-User-Id` header
 3. Frontend stores user ID in localStorage
-4. Document: "In production, this would use Auth0/Clerk for OAuth + magic links"
+4. In production this would use Auth0/Clerk for OAuth + magic links
 
 **Backend:**
 
@@ -245,7 +245,7 @@ if (!localStorage.getItem('userId')) {
 }
 ```
 
-### README "How to Test" Section (Required)
+### README "How to Test" Section
 
 ```text
 ## How to Test
@@ -278,7 +278,7 @@ The demo user is automatically loaded - no login required.
 
 ## Verification Checklist
 
-Before submitting:
+Before shipping:
 
 - [ ] `cd api && rails test` - All passing
 - [ ] `cd web && npm test` - All passing
